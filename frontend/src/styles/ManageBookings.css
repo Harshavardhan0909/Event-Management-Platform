@@ -1,0 +1,128 @@
+/* General container styles for the entire bookings page */
+.bookings-container {
+    margin: 3em auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    max-width: 90%;
+    padding: 2em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.bookings-header {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Search input styles */
+.search-input, 
+.bookings-container select {
+    border-color: #000;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+.search-input{
+    width: 97.4%;
+}
+.search-input:focus, 
+.bookings-container select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(85, 85, 85, 0.3);
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* No bookings message */
+.no-bookings-message {
+    color: #777;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Styles for the bookings list */
+.bookings-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Styles for each booking item */
+.booking-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 25px #efe26a;
+    transition: box-shadow 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+    border-color: white;
+}
+
+.booking-item:hover {
+    box-shadow: inset 0px 0px 25px #e0ca07;
+}
+
+/* Booking details layout */
+.booking-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Headings and detail rows */
+.booking-item strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.booking-item span {
+    color: #555;
+}
+
+/* Action buttons container */
+.booking-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* Delete and View More buttons */
+.bookings-container .delete-button button
+ {
+    background-color: #ff4d4d;
+    color: #f9f9f9;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-left: 15em;
+}
+
